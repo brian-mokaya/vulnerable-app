@@ -56,3 +56,20 @@
 2026-09-26 01:09:39,549 INFO app.main Database configuration detected
 2026-09-26 01:09:39,549 INFO app.main Startup health snapshot: status=healthy database=connected
 2026-09-26 01:09:39,558 INFO httpx HTTP Request: POST http://testserver/login "HTTP/1.1 200 OK"
+2026-09-26 01:21:54,222 INFO app.main Ripple Demo API starting
+2026-09-26 01:21:54,222 INFO app.main Database configuration detected
+2026-09-26 01:21:54,222 INFO app.main Startup health snapshot: status=healthy database=connected
+2026-09-26 01:23:07,439 INFO app.main Ripple Demo API starting
+2026-09-26 01:23:07,440 INFO app.main Database configuration detected
+2026-09-26 01:23:07,441 INFO app.main Startup health snapshot: status=healthy database=connected
+2026-09-26 01:23:07,455 INFO httpx HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-09-26 01:23:07,472 INFO app.main Ripple Demo API starting
+2026-09-26 01:23:07,473 WARNING app.main Database configuration missing: DATABASE_URL is not set
+2026-09-26 01:23:07,473 WARNING app.services.database Database configuration missing: DATABASE_URL is not set
+2026-09-26 01:23:07,474 INFO app.main Startup health snapshot: status=degraded database=unavailable
+2026-09-26 01:23:07,479 WARNING app.services.database Database configuration missing: DATABASE_URL is not set
+2026-09-26 01:23:07,482 INFO httpx HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-09-26 01:23:07,495 INFO app.main Ripple Demo API starting
+2026-09-26 01:23:07,496 INFO app.main Database configuration detected
+2026-09-26 01:23:07,496 INFO app.main Startup health snapshot: status=healthy database=connected
+2026-09-26 01:23:07,512 INFO httpx HTTP Request: POST http://testserver/login "HTTP/1.1 200 OK"
