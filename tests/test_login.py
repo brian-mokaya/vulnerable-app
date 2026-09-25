@@ -9,7 +9,7 @@ def test_login_succeeds(monkeypatch) -> None:
     with TestClient(app) as client:
         response = client.post(
             "/login",
-            json={"username": "demo", "password": "secret"},
+            json={"username": "demo", "password": "ripple"},
         )
 
     assert response.status_code == 200

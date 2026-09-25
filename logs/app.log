@@ -1,0 +1,58 @@
+2026-09-26 01:03:37,464 INFO app.main Ripple Demo API starting
+2026-09-26 01:03:37,464 INFO app.main Database configuration detected
+2026-09-26 01:03:37,465 INFO app.main Startup health snapshot: status=healthy database=connected
+2026-09-26 01:03:37,477 INFO httpx HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-09-26 01:03:37,493 INFO app.main Ripple Demo API starting
+2026-09-26 01:03:37,494 WARNING app.main Database configuration missing: DATABASE_URL is not set
+2026-09-26 01:03:37,494 WARNING app.services.database Database configuration missing: DATABASE_URL is not set
+2026-09-26 01:03:37,495 INFO app.main Startup health snapshot: status=degraded database=unavailable
+2026-09-26 01:03:37,503 WARNING app.services.database Database configuration missing: DATABASE_URL is not set
+2026-09-26 01:03:37,506 INFO httpx HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-09-26 01:03:37,520 INFO app.main Ripple Demo API starting
+2026-09-26 01:03:37,520 INFO app.main Database configuration detected
+2026-09-26 01:03:37,521 INFO app.main Startup health snapshot: status=healthy database=connected
+2026-09-26 01:03:37,527 WARNING app.services.auth Login request failed: invalid credentials for user demo
+2026-09-26 01:03:37,527 WARNING app.routes.auth Login request failed for user: demo
+2026-09-26 01:03:37,529 INFO httpx HTTP Request: POST http://testserver/login "HTTP/1.1 401 Unauthorized"
+2026-09-26 01:06:38,383 INFO app.main Ripple Demo API starting
+2026-09-26 01:06:38,384 INFO app.main Database configuration detected
+2026-09-26 01:06:38,385 INFO app.main Startup health snapshot: status=healthy database=connected
+2026-09-26 01:06:38,397 INFO httpx HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-09-26 01:06:38,412 INFO app.main Ripple Demo API starting
+2026-09-26 01:06:38,413 WARNING app.main Database configuration missing: DATABASE_URL is not set
+2026-09-26 01:06:38,414 WARNING app.services.database Database configuration missing: DATABASE_URL is not set
+2026-09-26 01:06:38,414 INFO app.main Startup health snapshot: status=degraded database=unavailable
+2026-09-26 01:06:38,420 WARNING app.services.database Database configuration missing: DATABASE_URL is not set
+2026-09-26 01:06:38,423 INFO httpx HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-09-26 01:06:38,440 INFO app.main Ripple Demo API starting
+2026-09-26 01:06:38,440 INFO app.main Database configuration detected
+2026-09-26 01:06:38,441 INFO app.main Startup health snapshot: status=healthy database=connected
+2026-09-26 01:06:38,449 INFO httpx HTTP Request: POST http://testserver/login "HTTP/1.1 200 OK"
+2026-09-26 01:07:49,269 INFO app.main Ripple Demo API starting
+2026-09-26 01:07:49,269 INFO app.main Database configuration detected
+2026-09-26 01:07:49,270 INFO app.main Startup health snapshot: status=healthy database=connected
+2026-09-26 01:07:49,280 INFO httpx HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-09-26 01:07:49,297 INFO app.main Ripple Demo API starting
+2026-09-26 01:07:49,298 WARNING app.main Database configuration missing: DATABASE_URL is not set
+2026-09-26 01:07:49,298 WARNING app.services.database Database configuration missing: DATABASE_URL is not set
+2026-09-26 01:07:49,299 INFO app.main Startup health snapshot: status=degraded database=unavailable
+2026-09-26 01:07:49,306 WARNING app.services.database Database configuration missing: DATABASE_URL is not set
+2026-09-26 01:07:49,309 INFO httpx HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-09-26 01:07:49,329 INFO app.main Ripple Demo API starting
+2026-09-26 01:07:49,330 INFO app.main Database configuration detected
+2026-09-26 01:07:49,330 INFO app.main Startup health snapshot: status=healthy database=connected
+2026-09-26 01:07:49,338 INFO httpx HTTP Request: POST http://testserver/login "HTTP/1.1 200 OK"
+2026-09-26 01:09:39,492 INFO app.main Ripple Demo API starting
+2026-09-26 01:09:39,493 INFO app.main Database configuration detected
+2026-09-26 01:09:39,493 INFO app.main Startup health snapshot: status=healthy database=connected
+2026-09-26 01:09:39,504 INFO httpx HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-09-26 01:09:39,520 INFO app.main Ripple Demo API starting
+2026-09-26 01:09:39,521 WARNING app.main Database configuration missing: DATABASE_URL is not set
+2026-09-26 01:09:39,521 WARNING app.services.database Database configuration missing: DATABASE_URL is not set
+2026-09-26 01:09:39,521 INFO app.main Startup health snapshot: status=degraded database=unavailable
+2026-09-26 01:09:39,530 WARNING app.services.database Database configuration missing: DATABASE_URL is not set
+2026-09-26 01:09:39,533 INFO httpx HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-09-26 01:09:39,548 INFO app.main Ripple Demo API starting
+2026-09-26 01:09:39,549 INFO app.main Database configuration detected
+2026-09-26 01:09:39,549 INFO app.main Startup health snapshot: status=healthy database=connected
+2026-09-26 01:09:39,558 INFO httpx HTTP Request: POST http://testserver/login "HTTP/1.1 200 OK"

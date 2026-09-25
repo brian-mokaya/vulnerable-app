@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from contextlib import asynccontextmanager
 import logging
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
@@ -50,15 +51,10 @@ def configure_logging() -> None:
 
 configure_logging()
 logger = logging.getLogger(__name__)
-app = FastAPI(title="Ripple Demo API")
-
-app.include_router(health_router)
-app.include_router(auth_router)
-app.include_router(users_router)
 
 
-@app.on_event("startup")
-def startup_log() -> None:
+@asynccontextmanager
+async def lifespan(app: FastAPI):
     settings = get_settings()
     logger.info("Ripple Demo API starting")
     if settings.database_url:
@@ -68,6 +64,14 @@ def startup_log() -> None:
 
     status, database = get_database_status()
     logger.info("Startup health snapshot: status=%s database=%s", status, database)
+    yield
+
+
+app = FastAPI(title="Ripple Demo API", lifespan=lifespan)
+
+app.include_router(health_router)
+app.include_router(auth_router)
+app.include_router(users_router)
 
 
 @app.get("/")
