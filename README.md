@@ -42,15 +42,54 @@ The intended demo failure later is simple: change the app to look for `DB_URL` w
 
 ## Run locally
 
-1. Create a virtual environment and install dependencies from `requirements.txt`.
-2. Copy `.env.example` to `.env` and set `DATABASE_URL`.
-3. Start the app with:
+1. Create and activate a virtual environment.
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+2. Install dependencies.
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Set the environment variable the app expects.
+
+```bash
+cp .env.example .env
+export DATABASE_URL=demo://connected
+```
+
+4. Start the server.
 
 ```bash
 uvicorn app.main:app --reload
 ```
 
 The app will be available at `http://127.0.0.1:8000`.
+
+5. Confirm the app is running.
+
+```bash
+curl http://127.0.0.1:8000/
+curl http://127.0.0.1:8000/health
+```
+
+6. Try the login endpoint.
+
+```bash
+curl -X POST http://127.0.0.1:8000/login \
+	-H "Content-Type: application/json" \
+	-d '{"username":"demo","password":"ripple"}'
+```
+
+7. Check the users endpoint.
+
+```bash
+curl http://127.0.0.1:8000/users
+```
 
 ## Tests
 
